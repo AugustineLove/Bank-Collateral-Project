@@ -1,0 +1,32 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background-image: url("collateral.jpeg");
+    background-blend-mode: darken;
+    background-color: rgba(0,0,0,0.6);
+}
+.center {
+   margin: 100px;
+}
+.class_login{
+    margin: 80px;
+    color: white;
+}
+
+.len{
+    width: 290px;
+    margin: 10px;
+    height: 28px;
+    border-radius: 10px;
+}
+.login_link{
+    border-radius: 200px;
+    color: blanchedalmond;
+}
+.des_color{
+    color: azure;
+}
+.copy{
+    margin: 300px;
+}

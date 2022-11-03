@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+    background: rgb(44, 44, 46);
+    padding: 0 10px;
+}
+.branch{
+    position: relative;
+    align-items: center;
+    height: 30px;
+    width: 150px;
+    font-size: large;
+}
+.select{
+    font-size: large;
+}
+.wrapper {
+    max-width: 500px;
+    width: 100%;
+    background: #fff;
+    margin: 20px auto;
+    padding: 30px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125);
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: darkblue;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.form {
+    width: 100%;
+}
+
+.input_field {
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.input_field label {
+    width: 200px;
+    color: #757575;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.input,
+.textarea {
+    width: 100%;
+    outline: none;
+    border: 1px solid #d5dbd9;
+    font-size: 15px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.textarea {
+    resize: none;
+    height: 110px;
+}
+
+.custom_select {
+    position: relative;
+    width: 100%;
+    height: 37px;
+}
+
+.custom_select select {
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid #d5dbd9;
+    width: 100%;
+    height: 100%;
+    padding: 8px 10px;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    outline: none;
+}
+
+.custom_select:before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 4px;
+    border: 8px solid;
+    border-color: #d5dbd9 transparent transparent transparent;
+    pointer-events: none;
+}
+
+.input:focus,
+.textarea:focus,
+.input_field select:focus {
+    border: 1px solid darkblue;
+}
+
+.input_field p {
+    font-size: 15px;
+    color: darkblue;
+}
+
+.check {
+    width: 25px;
+    height: 15px;
+    position: relative;
+    display: block;
+    cursor: pointer;
+}
+
+.checkbox {
+    position: relative;
+    top: 0px;
+    left: 1px;
+    opacity: 1px;
+}
+
+.btn {
+    width: 100%;
+    padding: 8px 10px;
+    font-size: 15px;
+    border: 1px solid #fff;
+    background: darkblue;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.input_field:last-child {
+    margin-bottom: 0px;
+}
+
+.btn:hover {
+    background: rgb(19, 19, 36);
+}
+
+@media (max-width:420px) {
+    .input_field {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .input_field label {
+        margin-bottom: 5px;
+    }
+    .input_field.terms {
+        flex-direction: row;
+    }
+}
